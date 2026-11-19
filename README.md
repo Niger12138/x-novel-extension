@@ -2,6 +2,9 @@
 
 一个把小说网页变成「自己的阅读器」的浏览器扩展：**识别到小说章节页就自动切换**，进入后只有正文，没有广告、没有推荐、没有下载浮层；遇到被拆成 `（1/3）(2/3)…` 的章节，会**自动抓取后续页并拼成一篇完整正文**。
 
+> GitHub 仓库：<https://github.com/Niger12138/x-novel-extension>  
+> 安装包：仓库 `dist/x-小说拓展-1.1.7.zip`，或 [Releases](https://github.com/Niger12138/x-novel-extension/releases) 下载。
+
 - 版本：1.1.7
 - 适用：Microsoft Edge / Chrome（Manifest V3，桌面端）
 - 权限：`storage`、`tabs`（不加载远程代码，不上传页面内容）
