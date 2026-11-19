@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>x-小说拓展</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="app">
+  <header class="head">
+    <div class="mark">x</div>
+    <div class="head-text">
+      <div class="title">x·小说拓展</div>
+      <div class="sub">纯净阅读 · 无广告 · 无推荐</div>
+    </div>
+    <div class="ver">v1.1.7</div>
+  </header>
+
+  <section class="card">
+    <div class="card-top">
+      <span class="card-label">当前页面</span>
+      <span class="score" id="scoreText">—</span>
+    </div>
+    <div class="state" id="stateText">正在识别…</div>
+    <div class="bar"><i id="scoreBar"></i></div>
+    <div class="reasons" id="reasons"></div>
+    <div class="host" id="hostText"></div>
+    <button class="primary" id="mainBtn" disabled>进入纯净阅读</button>
+  </section>
+
+  <section class="group recent-group" id="recentGroup" hidden>
+    <details class="recent" id="recentBox">
+      <summary>
+        <span>最近阅读</span>
+        <small id="recentCount"></small>
+      </summary>
+      <div class="recent-list" id="recentList"></div>
+    </details>
+  </section>
+
+  <section class="group">
+    <div class="row">
+      <div class="rl">自动识别并进入<small>命中小说特征后直接进入阅读模式</small></div>
+      <label class="switch"><input type="checkbox" id="autoEnter"><span class="track"></span><span class="knob"></span></label>
+    </div>
+    <div class="row">
+      <div class="rl">净化原页面<small>隐藏广告位、推荐位与下载浮层</small></div>
+      <label class="switch"><input type="checkbox" id="purify"><span class="track"></span><span class="knob"></span></label>
+    </div>
+    <div class="row">
+      <div class="rl">拼接分页章节<small>本章被拆成 1/3、2/3 时自动接起来</small></div>
+      <label class="switch"><input type="checkbox" id="mergeParts"><span class="track"></span><span class="knob"></span></label>
+    </div>
+    <div class="row">
+      <div class="rl">本站自动进入<small id="siteHost">—</small></div>
+      <label class="switch"><input type="checkbox" id="siteAuto"><span class="track"></span><span class="knob"></span></label>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="row static">
+      <div class="rl">阅读主题</div>
+      <div class="swatches" id="swatches"></div>
+    </div>
+    <div class="row static">
+      <div class="rl">正文字号</div>
+      <div class="stepper">
+        <button id="fsMinus" aria-label="减小字号">A−</button>
+        <span id="fsVal">19</span>
+        <button id="fsPlus" aria-label="增大字号">A＋</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>Alt+R 快速开关　·　阅读进度自动记忆</div>
+    <div id="purifyCount"></div>
+  </footer>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

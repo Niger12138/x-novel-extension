@@ -1,0 +1,5 @@
+/* 仅用于原页面净化，阅读器全部样式走 Shadow DOM */
+.xn-hide,
+[data-xn-hidden="1"] {
+  display: none !important;
+}
